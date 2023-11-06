@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <div class="bg-color card">
+        <div class="card-body">
+            <h2 class=" text-color-header card-title text-center">{{ title }}</h2>
+            <div class="mb-3">
+                <label for="noteTitle" class="text-color form-label">Note Title</label>
+                <input type="text" name="noteTitle" [(ngModel)]="pageInput.title" class="form-control" id="noteTitle"
+                    placeholder="Enter note title">
+            </div>
+            <div class="mb-3">
+                <label for="noteContent" class="text-color form-label">Note Content</label>
+                <textarea class="form-control" id="noteContent" name="noteContent" rows="4"
+                    placeholder="Enter note content" [(ngModel)]="pageInput.content"></textarea>
+            </div>
+            <button type="submit" class="btn custom-button" [disabled]="!(pageInput.title && pageInput.content)"
+                (click)="onSaveNote()">Add Note</button>
+        </div>
+    </div>
+</div>

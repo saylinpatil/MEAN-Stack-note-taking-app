@@ -1,0 +1,31 @@
+.text-color-header {
+    color: #3a3c01;
+    font-weight: bolder;
+    font-family: 'Tangerine', serif;
+    font-size: 43px;
+
+}
+
+.text-color {
+    color: #595b06;
+    font-weight: bolder;
+}
+
+.bg-color {
+    background-color: #eff2a1;
+    color: rgb(1, 34, 7);
+}
+
+.custom-button {
+    padding: 4px 20px;
+    margin: 0;
+    color: rgb(0, 0, 10);
+    background-color: #b4b40e;
+    border: 2px solid #dde958;
+}
+
+.custom-button:hover {
+    background-color: #7a7a04;
+    color: rgb(255, 255, 255);
+    border: solid 1px #efefa8;
+}

@@ -1,0 +1,77 @@
+.bg-color-accordian {
+    background-color: #eff2a1;
+    color: rgb(1, 34, 7);
+}
+
+.bg-color {
+    background-color: #eff6da;
+    color: rgb(1, 34, 7);
+}
+
+.custom-button-warning {
+    border-radius: 5px 5px 5px;
+    padding: 8px 20px;
+    margin: 0;
+
+    color: rgb(12, 12, 23);
+    background-color: #f1911b;
+    border: 2px solid #ffad41;
+}
+
+.custom-button-warning:hover {
+
+    background-color: #fdc693;
+    color: rgb(3, 3, 26);
+    border: solid 1px #b7f2f9;
+}
+
+.custom-button-danger {
+    border-radius: 5px 5px 5px;
+    padding: 8px 20px;
+    margin: 0;
+
+    color: rgb(250, 250, 254);
+    background-color: #af0101;
+    border: 2px solid #f19393;
+}
+
+.custom-button-danger:hover {
+
+    background-color: #f56656;
+    color: rgb(255, 255, 255);
+    border: solid 1px #c9e8eb;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    /* Set background to transparent when not collapsed */
+    color: #333;
+    /* Change text color to your preferred color */
+    border: none;
+    /* Remove border */
+}
+
+.custom-title {
+    color: #333;
+    /* Change the color to your preferred darker color */
+    font-weight: bolder;
+
+}
+
+.centered-content {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.logo {
+    width: 150px;
+    height: 170px;
+}
+
+.title {
+    margin-left: 30px;
+    font-family: 'Tangerine', serif;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px #aaa;
+}

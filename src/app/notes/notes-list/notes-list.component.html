@@ -1,0 +1,35 @@
+<div class="centered-content mt-3">
+    <img src="./assets/take-note-Img.jpeg" alt="Logo" class="logo">
+    <h1 class="title">...Where thoughts become notes.</h1>
+</div>
+
+<div class="container mt-3">
+    <div class="bg-color-accordian  p-3 m-0 border bd-example">
+        <p style="text-align: center;" *ngIf="!during.fechingNotes || notes.length == 0">
+            {{ !during.fechingNotes ? "Loading ..." : "Notes not added yet!" }}
+            <i [hidden]="during.fechingNotes" class="fas fa-spinner fa-pulse"></i>
+        </p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item my-3" *ngFor="let note of notes">
+                <h2 class="accordion-header" id="heading{{ note.id }}">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        [attr.data-bs-target]="'#collapse' + note.id">
+                        <span class="custom-title text-capitalize">{{ note.title }}</span>
+                    </button>
+                </h2>
+                <div [id]="'collapse' + note.id" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        {{ note.content }}
+                    </div>
+                    <div class="bg-color">
+                        <div class="p-3 m-0 border bd-example d-flex justify-content-end">
+                            <button class="custom-button-warning" [routerLink]="['/update', note.id]">Edit</button>
+                            <span style="margin-right: 10px;"></span>
+                            <button class="custom-button-danger" (click)="onDeleteNote(note.id)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
