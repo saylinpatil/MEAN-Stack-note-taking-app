@@ -3,10 +3,6 @@ const express = require("express");
 const router = express.Router();
 const Note = require("../models/note");
 
-// router.get('', (req, res) => {
-// res.send('footer')
-// })
-
 router.post('', (req, res) => {
     const note = new Note({
         title: req.body.title,
