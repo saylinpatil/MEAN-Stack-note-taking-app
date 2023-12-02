@@ -9,7 +9,7 @@ const notesRoutes = require("./routes/notes")
 const app = express();
 const port = 3000;
 
-mongoose.connect("mongodb+srv://sayalipatil:mytkxTrFYgP55deG@cluster0.xsl1xwo.mongodb.net/angular-db?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://sayalipatil:"+ Your_Password +"@cluster0.xsl1xwo.mongodb.net/angular-db?retryWrites=true&w=majority")
     .then(() => {
         console.log('connection succesfull to mongodb')
     }).catch(() => {
