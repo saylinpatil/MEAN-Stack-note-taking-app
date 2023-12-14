@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { map, Subject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
-import { Note } from './notes.module';
+import { Note } from './notes.model';
 import { Router } from '@angular/router';
 
 @Injectable({
