@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { Note } from '../notes.module';
+import { Note } from '../notes.model';
 import { NotesService } from '../notes.service';
 
 @Component({
