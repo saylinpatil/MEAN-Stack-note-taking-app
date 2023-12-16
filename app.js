@@ -4,7 +4,7 @@ const cors = require("cors");
 const path = require("path")
 const mongoose = require("mongoose");
 
-const notesRoutes = require("./routes/notes")
+const notesRoutes = require("./routes/notes");
 
 const app = express();
 const port = 3000;
